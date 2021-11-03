@@ -11,7 +11,7 @@ Summary: xsdata attrs plugin
 
 Development: https://github.com/tefra/xsdata-attrs
 
-Documentation: https://xsdata.readthedocs.io
+Documentation: https://xsdata-attrs.readthedocs.io
 
 xsData is a complete XML data binding library for python allowing
 developers to access and use XML and JSON documents as simple objects rather
