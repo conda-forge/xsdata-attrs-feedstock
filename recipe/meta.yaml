@@ -1,5 +1,5 @@
 {% set name = "xsdata-attrs" %}
-{% set version = "23.8" %}
+{% set version = "24.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xsdata_attrs-{{ version }}.tar.gz
-  sha256: f306ff0aeb04e01ad79b0d5cf56f475d8dcb9240384756fa6ec5c4489e641599
+  sha256: 9137f95e8b2292bf62ef9a85cfa85995ccabfb5ed3ea76474ce3e09c017f4784
 
 build:
   number: 0
