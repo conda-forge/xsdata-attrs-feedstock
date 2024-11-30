@@ -7,26 +7,27 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xsdata_attrs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xsdata_attrs-{{ version }}.tar.gz
   sha256: 8823fe4c42aa1387be00936051cb4a58f28328cd50ccf5592b505d9629fa9720
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - attrs >=19.2.0
-    - python >=3.8
+    - python >={{ python_min }}
     - xsdata >=24.5
 
 test:
   requires:
     - pytest
+    - python {{ python_min }}
   source_files:
     - tests/*
   commands:
